@@ -1,5 +1,6 @@
 body {
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
 
 html{
@@ -89,7 +90,6 @@ z-index: 1;
     background-color: white;
     color: black;
 }
-
 #home{
     /* background: rgba(0, 0, 0, 0.5);; */
     margin-top: 10px;
@@ -118,7 +118,7 @@ z-index: 1;
     transition: transform 0.5s;
 }
 
-.video-container {
+.home-img-container {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -127,15 +127,15 @@ z-index: 1;
     overflow: hidden;
     z-index: -1;
   }
-  .video-container video {
+  .home-img-container img {
     /* Make video to at least 100% wide and tall */
-    min-width: 100%; 
+    /* min-width: 100%; 
     min-height: 100%; 
-  
+   */
     /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-    width: auto;
+    /* width: auto;
     height: auto;
-  
+   */
     /* Center the video */
     position: absolute;
     top: 50%;
@@ -224,10 +224,12 @@ z-index: 1;
 }
 #gallery-cars{
     margin: 3rem;
+    margin-top: 0;
     /* text-align: center; */
 }
 div.gallery {    
     margin-top: 3rem;
+    /* transition: ease-in; */
     
 }
 
@@ -236,7 +238,8 @@ div.gallery:hover {
     background-color: black;
     color: white;
     transition: 0.3s;
-
+    transform: scaleX(1.2) scaleY(1.2);
+    z-index: 2;
 }
 
 div.gallery img {
@@ -252,5 +255,35 @@ text-align: center;
 
 #gallery-space{
     margin: 3rem;
+    margin-top: 0;
     /* text-align: center; */
+}
+
+
+#search{
+    margin: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+}
+
+
+.form-container{
+    display: flex;
+}
+
+.search-bar{
+    width: 90rem;
+    font-size: large;
+}
+
+.search-btn{
+    border: none;
+    width: 10%;
+    color: white;
+    background-color: black;
+    width: 10rem;
+}
+
+.invisible{
+    display: none;
 }
